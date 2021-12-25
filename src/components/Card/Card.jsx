@@ -4,10 +4,12 @@ import './card.css'
 
 const Card=({imgIndex})=> {
     function imagesMapping(data){  
-        return data.find((img,index)=>{
+        let imgUrl= data.find((img,index)=>{
             if(index===imgIndex)
             return img.imageUrl;  
         })
+        if(imgUrl)return imgUrl
+        return ''
 
     }
     return (
