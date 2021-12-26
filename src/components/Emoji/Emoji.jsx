@@ -4,7 +4,7 @@ import './emoji.css'
 export default function Emoji({count,img}) {
     return (
         <div>
-            <img src={img} alt='/'/>
+            <img className="emoji" src={img} alt='/'/>
             {count}
         </div>
     )

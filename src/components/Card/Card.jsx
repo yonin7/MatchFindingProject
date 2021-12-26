@@ -8,7 +8,9 @@ const Card=({imgIndex})=> {
             if(index===imgIndex)
             return img.imageUrl;  
         })
+        console.log(imgUrl);
         if(imgUrl)return imgUrl
+        imgUrl='/'
         return '/'
 
     }

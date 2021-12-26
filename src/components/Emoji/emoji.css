@@ -1,4 +1,11 @@
-img {
-  width: 6rem;
-  height: 5.5rem;
+.emoji {
+  max-width: 6rem;
+  max-height: 5.5rem;
+}
+
+@media (max-width: 800px) {
+  .emoji {
+    max-width: 2rem;
+    max-height: 2rem;
+  }
 }

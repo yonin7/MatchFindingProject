@@ -72,3 +72,8 @@
   flex-direction: column;
   justify-content: center;
 }
+@media (max-width: 800px) {
+  .container {
+    gap: 2rem;
+  }
+}
