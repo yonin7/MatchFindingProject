@@ -4,15 +4,18 @@ import './card.css'
 
 const Card=({imgIndex})=> {
     function imagesMapping(data){  
-        let imgUrl= data.filter((img,index)=>{
+        let imgUrl= ''
+        data.forEach((img,index)=>{
             if(index===imgIndex)
-            return img.imageUrl;  
+            imgUrl=img;  
         })
-        return imgUrl[0].imageUrl   
+        return imgUrl
+
+
     }
     return (
         <div  >
-           <img className="image" src={ imagesMapping(Store)}alt='/'></img>
+           <img className="image" src={ imagesMapping(Store).imageUrl}alt='/'></img>
            <h2>{ imagesMapping(Store).title }</h2>
         </div>
     )
