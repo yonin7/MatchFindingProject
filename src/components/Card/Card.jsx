@@ -9,7 +9,7 @@ const Card=({imgIndex})=> {
             return img.imageUrl;  
         })
         if(imgUrl)return imgUrl
-        return ''
+        return '/'
 
     }
     return (
